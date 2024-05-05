@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import Image from "react-bootstrap/Image";
+import { LinkContainer } from "react-router-bootstrap";
 
 import defaultPhoto from "../assets/default.png";
 
@@ -10,14 +11,24 @@ const TeacherNavbar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Teacher Connect</Navbar.Brand>
+        <LinkContainer to={"/"}>
+          <Navbar.Brand>Teacher Connect</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="addPost">Add Post</Nav.Link>
-            <Nav.Link href="questions">Questions</Nav.Link>
-            <Nav.Link href="community">Community</Nav.Link>
+            <LinkContainer to={"/"}>
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"/addPost"}>
+              <Nav.Link>Add Post</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"questions"}>
+              <Nav.Link>Questions</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"/community"}>
+              <Nav.Link>Community</Nav.Link>
+            </LinkContainer>
           </Nav>
           <Nav>
             <Dropdown>
@@ -32,8 +43,10 @@ const TeacherNavbar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">My Name</Dropdown.Item>
-                <Dropdown.Item href="/profile">My Profile</Dropdown.Item>
+                <Dropdown.Item>My Name</Dropdown.Item>
+                <LinkContainer to={"/profile"}>
+                  <Dropdown.Item>My Profile</Dropdown.Item>
+                </LinkContainer>
                 <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item href="#/action-3" className="text-danger">
