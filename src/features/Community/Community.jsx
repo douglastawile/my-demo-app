@@ -13,13 +13,15 @@ const Community = () => {
       photo: userOne,
       subjects: ["Math", "Science"],
       location: "Kumasi",
+      bio: `Queeny Takyi Ansah is a passionate software engineer with a love for technology and innovation. With a background in computer science and years of experience in the industry, Alex enjoys tackling complex problems and turning them into elegant solutions. Outside of work, Alex is an avid reader, enjoys hiking in nature, and loves experimenting with new recipes in the kitchen. Passionate about learning and personal growth, Alex is always seeking out new challenges and opportunities to expand their knowledge and skills`,
     },
     {
       id: 2,
       name: "Effah Richard",
       photo: userTwo,
       subjects: ["English", "History"],
-      location: "Afram Plane",
+      location: "Koforidua",
+      bio: `Effah Richard is a passionate software engineer with a love for technology and innovation. With a background in computer science and years of experience in the industry, Alex enjoys tackling complex problems and turning them into elegant solutions. Outside of work, Alex is an avid reader, enjoys hiking in nature, and loves experimenting with new recipes in the kitchen. Passionate about learning and personal growth, Alex is always seeking out new challenges and opportunities to expand their knowledge and skills`,
     },
     {
       id: 3,
@@ -27,13 +29,15 @@ const Community = () => {
       photo: userThree,
       subjects: ["Math", "ICT"],
       location: "Tamale",
+      bio: `Douglas Tawile is a passionate software engineer with a love for technology and innovation. With a background in computer science and years of experience in the industry, Alex enjoys tackling complex problems and turning them into elegant solutions. Outside of work, Alex is an avid reader, enjoys hiking in nature, and loves experimenting with new recipes in the kitchen. Passionate about learning and personal growth, Alex is always seeking out new challenges and opportunities to expand their knowledge and skills`,
     },
     {
       id: 3,
       name: "Issah Abubakar",
       photo: userFour,
-      subjects: ["Math", "ICT"],
+      subjects: ["Science", "ICT"],
       location: "Tamale",
+      bio: `Issah Abubakar is a passionate software engineer with a love for technology and innovation. With a background in computer science and years of experience in the industry, Alex enjoys tackling complex problems and turning them into elegant solutions. Outside of work, Alex is an avid reader, enjoys hiking in nature, and loves experimenting with new recipes in the kitchen. Passionate about learning and personal growth, Alex is always seeking out new challenges and opportunities to expand their knowledge and skills`,
     },
   ];
 
