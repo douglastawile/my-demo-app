@@ -11,23 +11,29 @@ const TeacherNavbar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <LinkContainer to={"/"}>
+        <LinkContainer to="/">
           <Navbar.Brand>Teacher Connect</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <LinkContainer to={"/"}>
+            <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to={"/addPost"}>
+            <LinkContainer to="addPost">
               <Nav.Link>Add Post</Nav.Link>
             </LinkContainer>
-            <LinkContainer to={"questions"}>
+            <LinkContainer to="questions">
               <Nav.Link>Questions</Nav.Link>
             </LinkContainer>
-            <LinkContainer to={"/community"}>
+            <LinkContainer to="community">
               <Nav.Link>Community</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="auth/signup">
+              <Nav.Link>Signup</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="auth/login">
+              <Nav.Link>Login</Nav.Link>
             </LinkContainer>
           </Nav>
           <Nav>
@@ -44,14 +50,14 @@ const TeacherNavbar = () => {
 
               <Dropdown.Menu>
                 <Dropdown.Item>My Name</Dropdown.Item>
-                <LinkContainer to={"/profile"}>
+                <LinkContainer to="/profile">
                   <Dropdown.Item>My Profile</Dropdown.Item>
                 </LinkContainer>
-                <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+                <LinkContainer to="profile/edit">
+                  <Dropdown.Item>Settings</Dropdown.Item>
+                </LinkContainer>
                 <Dropdown.Divider />
-                <Dropdown.Item href="#/action-3" className="text-danger">
-                  Logout
-                </Dropdown.Item>
+                <Dropdown.Item className="text-danger">Logout</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

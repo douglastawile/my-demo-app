@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -31,7 +30,10 @@ export default function TeacherProfilePage() {
               <Card.Title className="text-center mt-3">
                 Queeny Takyi Ansah
               </Card.Title>
-              <Link className="float-end my-2 btn btn-success btn-sm rounded-4 shadow-lg">
+              <Link
+                to={"/profile/edit"}
+                className="float-end my-2 btn btn-success btn-sm rounded-4 shadow-lg"
+              >
                 Edit Profile
               </Link>
               <Card.Subtitle className="text-center text-muted mb-2">
