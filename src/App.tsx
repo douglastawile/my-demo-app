@@ -15,7 +15,9 @@ export default function App() {
             path="/"
             element={
               <h1 className="text-3xl font-bold underline text-slate-700">
-                App data coming soon...
+                <marquee behavior="" direction="">
+                  App data coming soon...
+                </marquee>
               </h1>
             }
           />
