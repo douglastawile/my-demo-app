@@ -31,14 +31,17 @@ export function Navigation() {
           }
         >
           <Dropdown.Header>
-            <span className="block text-sm">Bonnie Green</span>
+            <span className="block text-sm">Effah Richard</span>
             <span className="block truncate text-sm font-medium">
-              name@flowbite.com
+              effah@gmail.com.com
             </span>
           </Dropdown.Header>
-          <Dropdown.Item>Dashboard</Dropdown.Item>
-          <Dropdown.Item>Settings</Dropdown.Item>
-          <Dropdown.Item>Earnings</Dropdown.Item>
+          <Link to={"/profile"}>
+            <Dropdown.Item>Your Profile</Dropdown.Item>
+          </Link>
+          <Link to={"/edit"}>
+            <Dropdown.Item>Settings</Dropdown.Item>
+          </Link>
           <Dropdown.Divider />
           <Dropdown.Item>Sign out</Dropdown.Item>
         </Dropdown>
