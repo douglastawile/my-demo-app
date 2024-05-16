@@ -14,8 +14,8 @@ export default function App() {
           <Route
             path="/"
             element={
-              <h1 className="text-3xl font-bold underline text-slate-100">
-                Hello world!
+              <h1 className="text-3xl font-bold underline text-slate-700">
+                App data coming soon...
               </h1>
             }
           />
