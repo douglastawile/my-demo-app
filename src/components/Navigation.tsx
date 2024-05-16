@@ -59,9 +59,6 @@ export function Navigation() {
         <Link to={"auth/signin"}>
           <Navbar.Link as={"div"}>Signin</Navbar.Link>
         </Link>
-        <Link to={"profile"}>
-          <Navbar.Link as={"div"}>Profile</Navbar.Link>
-        </Link>
       </Navbar.Collapse>
     </Navbar>
   );
