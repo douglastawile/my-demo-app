@@ -1,5 +1,13 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**Additional Tailwind styles*/
+.signup-form {
+  @apply bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto;
+}
+
+.signup-form input,
+.signup-form button {
+  @apply rounded-md;
 }
