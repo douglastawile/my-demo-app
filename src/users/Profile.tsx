@@ -80,7 +80,7 @@ function ProfilePage() {
           <ProfileTabs />
         </Card>
       </section>
-      <section className="flex-auto w-full lg:w-4/12">
+      <section className="flex-auto w-full lg:w-4/12 mb-4">
         <Card className=" shadow-sm mx-2">
           <h4 className="text-2xl font-bold dark:text-white">About</h4>
           <p className="mb-3 text-gray-500 dark:text-gray-400">
