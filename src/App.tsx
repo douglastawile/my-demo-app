@@ -9,9 +9,9 @@ import HomePage from "./pages/HomePage";
 
 export default function App() {
   return (
-    <Flowbite>
-      <div className="bg-white max-h-screen dark:h-screen dark:bg-slate-900">
-        <BrowserRouter>
+    <div className="bg-white max-h-fit h-screen dark:bg-slate-950">
+      <BrowserRouter>
+        <Flowbite>
           <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -21,8 +21,8 @@ export default function App() {
             <Route path="/edit" element={<EditProfileForm />} />
             <Route path="*" element={<h1>404</h1>} />
           </Routes>
-        </BrowserRouter>
-      </div>
-    </Flowbite>
+        </Flowbite>
+      </BrowserRouter>
+    </div>
   );
 }
