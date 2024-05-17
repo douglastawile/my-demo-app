@@ -8,11 +8,6 @@ export function Navigation() {
     <Navbar fluid rounded>
       <Link to={`/`}>
         <Navbar.Brand as={"div"}>
-          {/* <img
-          src="/favicon.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite React Logo"
-        /> */}
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             LOGO
           </span>
@@ -59,9 +54,6 @@ export function Navigation() {
         </Link>
         <Link to={"auth/signin"}>
           <Navbar.Link as={"div"}>Signin</Navbar.Link>
-        </Link>
-        <Link to={"profile"}>
-          <Navbar.Link as={"div"}>Profile</Navbar.Link>
         </Link>
       </Navbar.Collapse>
     </Navbar>
