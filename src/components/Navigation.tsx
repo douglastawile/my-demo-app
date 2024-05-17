@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Avatar, Dropdown, Navbar, DarkThemeToggle } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 export function Navigation() {
@@ -19,6 +19,7 @@ export function Navigation() {
         </Navbar.Brand>
       </Link>
       <div className="flex md:order-2">
+        <DarkThemeToggle />
         <Dropdown
           arrowIcon={false}
           inline
@@ -58,6 +59,9 @@ export function Navigation() {
         </Link>
         <Link to={"auth/signin"}>
           <Navbar.Link as={"div"}>Signin</Navbar.Link>
+        </Link>
+        <Link to={"profile"}>
+          <Navbar.Link as={"div"}>Profile</Navbar.Link>
         </Link>
       </Navbar.Collapse>
     </Navbar>

@@ -1,11 +1,12 @@
 import { Card, Dropdown } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { ProfileTabs } from "./ProfileTabs";
+import { DeleteUserProfile } from "./DeleteUserProfile";
 
 function ProfilePage() {
   return (
     <section className="flex flex-wrap justify-between px-6 my-4">
-      <section className="flex-auto w-full lg:w-7/12">
+      <section className="flex-auto w-full lg:w-7/12 mb-3">
         <Card className="shadow-sm my-2 sm:my-0 mx-2">
           <div className="flex justify-between text-slate-400">
             <span>10 Followings</span>
@@ -30,12 +31,7 @@ function ProfilePage() {
                 </Link>
               </Dropdown.Item>
               <Dropdown.Item>
-                <Link
-                  to="#"
-                  className="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Delete
-                </Link>
+                <DeleteUserProfile />
               </Dropdown.Item>
             </Dropdown>
           </div>
@@ -67,7 +63,7 @@ function ProfilePage() {
                 Message
               </Link>
             </div>
-            <div className="flex flex-wrap my-2">
+            <div className="flex flex-wrap my-2 text-gray-500 dark:text-gray-400">
               <span className="mx-4 my-2 sm:my-0">
                 <i className="bi bi-briefcase-fill"></i> Teacher
               </span>
@@ -88,27 +84,27 @@ function ProfilePage() {
         <Card className=" shadow-sm mx-2">
           <h4 className="text-2xl font-bold dark:text-white">About</h4>
           <p className="mb-3 text-gray-500 dark:text-gray-400">
-            Track work across the enterprise through an open, collaborative
-            platform. Link issues across Jira and ingest data from other
-            software development tools, so your IT support and operations teams
-            have richer contextual information to rapidly respond to requests,
-            incidents, and changes.
+            Hello! My name is Queeny Takyi Ansah, and I am passionate about
+            teaching mathematics. With over 4 years of experience... in the
+            education field, I have had the privilege of helping students from
+            diverse backgrounds develop a deep understanding and appreciation
+            for math.
           </p>
-          <p>
+          <p className="mb-3 text-gray-500 dark:text-gray-400">
             <strong>
               <i className="bi bi-envelope-fill"></i>
             </strong>{" "}
             queenyansah@gmail.com
           </p>
 
-          <p>
+          <p className="mb-3 text-gray-500 dark:text-gray-400">
             <strong>
               <i className="bi bi-telephone-fill"></i>
             </strong>{" "}
             0242369415
           </p>
 
-          <p>
+          <p className="mb-3 text-gray-500 dark:text-gray-400">
             <strong>
               <i className="bi bi-book-half"></i>
             </strong>
