@@ -1,4 +1,4 @@
-import { Label, TextInput, Checkbox, Button, Card } from "flowbite-react";
+import { Label, TextInput, Button, Card } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 function SigninForm() {
@@ -8,6 +8,15 @@ function SigninForm() {
         <h5 className="text-xl text-center font-bold text-gray-900 dark:text-white">
           Sign in to our platform
         </h5>
+        <div className="text-sm font-medium text-gray-500 dark:text-gray-300 text-center">
+          Not registered?{" "}
+          <Link
+            to="/auth/signup"
+            className="text-blue-700 hover:underline dark:text-blue-500"
+          >
+            Create account
+          </Link>
+        </div>
         <div>
           <div className="mb-2 block">
             <Label htmlFor="email1" value="Your email" />
@@ -30,20 +39,7 @@ function SigninForm() {
             required
           />
         </div>
-        <div className="flex items-center gap-2">
-          <Checkbox id="remember" />
-          <Label htmlFor="remember">Remember me</Label>
-        </div>
-        <Button type="submit">Submit</Button>
-        <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-          Not registered?{" "}
-          <Link
-            to="/auth/signup"
-            className="text-blue-700 hover:underline dark:text-blue-500"
-          >
-            Create account
-          </Link>
-        </div>
+        <Button type="submit">Sign In</Button>
       </form>
     </Card>
   );
