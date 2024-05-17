@@ -13,7 +13,7 @@ function ProfilePage() {
             <span>20 Followers</span>
           </div>
           <div className="flex justify-end px-4 pt-4">
-            <Dropdown inline label="">
+            <Dropdown inline label="" className=" dark:text-slate-300">
               <Dropdown.Item>
                 <Link
                   to="/edit"
