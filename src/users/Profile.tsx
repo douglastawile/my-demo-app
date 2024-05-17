@@ -5,7 +5,7 @@ import { DeleteUserProfile } from "./DeleteUserProfile";
 
 function ProfilePage() {
   return (
-    <section className="flex flex-wrap justify-between px-6 my-4">
+    <section className="flex flex-wrap justify-between px-6 my-4 dark:bg-slate-950">
       <section className="flex-auto w-full lg:w-7/12 mb-3">
         <Card className="shadow-sm my-2 sm:my-0 mx-2">
           <div className="flex justify-between text-slate-400">
