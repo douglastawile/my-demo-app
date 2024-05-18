@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="flex-auto w-full lg:w-3/12 mx-2">
         <HomeProfile />
       </section>
-      <section className="flex-auto w-full lg:w-5/12 mx-2">
+      <section className="flex-auto w-full lg:w-5/12">
         <PostsPage />
       </section>
       <section className="flex-auto w-full lg:w-3/12 mx-2">

@@ -54,14 +54,17 @@ export function Navigation() {
             Home
           </Navbar.Link>
         </Link>
+        <Link to={"add-post"}>
+          <Navbar.Link as={"div"}>Add Post</Navbar.Link>
+        </Link>
+        <Link to={"community"}>
+          <Navbar.Link as={"div"}>Community</Navbar.Link>
+        </Link>
         <Link to={"auth/signup"}>
           <Navbar.Link as={"div"}>Signup</Navbar.Link>
         </Link>
         <Link to={"auth/signin"}>
           <Navbar.Link as={"div"}>Signin</Navbar.Link>
-        </Link>
-        <Link to={"profile"}>
-          <Navbar.Link as={"div"}>Profile</Navbar.Link>
         </Link>
       </Navbar.Collapse>
     </Navbar>

@@ -4,7 +4,10 @@ import Comment from "./Comment";
 export default function PostsPage() {
   return (
     <section>
-      <div className="flex flex-col mb-4 max-w-2xl p-6 space-y-6 overflow-hidden rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-800">
+      <h5 className="text-xl font-bold leading-none text-center text-gray-900 dark:text-white">
+        Recent Posts
+      </h5>
+      <div className="flex flex-col my-4 max-w-2xl p-6 space-y-6 overflow-hidden rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-800">
         <div className="flex space-x-4">
           <img
             alt=""

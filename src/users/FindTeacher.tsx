@@ -68,7 +68,7 @@ export function FindTeacher() {
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                <Button size={"sm"} gradientDuoTone="purpleToBlue">
+                <Button size={"xs"} gradientDuoTone="purpleToBlue">
                   follow
                 </Button>
               </div>
@@ -94,7 +94,7 @@ export function FindTeacher() {
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                <Button size={"sm"} gradientDuoTone="purpleToBlue">
+                <Button size={"xs"} gradientDuoTone="purpleToBlue">
                   follow
                 </Button>
               </div>
@@ -120,7 +120,7 @@ export function FindTeacher() {
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                <Button size={"sm"} gradientDuoTone="purpleToBlue">
+                <Button size={"xs"} gradientDuoTone="purpleToBlue">
                   follow
                 </Button>
               </div>
@@ -146,7 +146,7 @@ export function FindTeacher() {
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                <Button size={"sm"} gradientDuoTone="purpleToBlue">
+                <Button size={"xs"} gradientDuoTone="purpleToBlue">
                   follow
                 </Button>
               </div>
