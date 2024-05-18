@@ -11,11 +11,15 @@ function JoinCollaborationComponent() {
     message: "",
   });
 
-  const handleInputChange = (e: {
-    target: { name: unknown; value: unknown };
+  const handleInputChange = (event: {
+    target: { name: string; value: unknown };
   }) => {
-    const { name, value } = e.target;
-    setCollabDetails({ ...collabDetails, [name]: value });
+    setCollabDetails((curValues) => {
+      return {
+        ...curValues,
+        [event.target.name]: event.target.value,
+      };
+    });
   };
 
   const handleSubmit = () => {

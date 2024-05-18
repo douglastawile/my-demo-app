@@ -1,4 +1,4 @@
-import { Card, Avatar, Button } from "flowbite-react";
+import { Card, Avatar } from "flowbite-react";
 import { FaRegHandshake } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import userOne from "../assets/doug.jpg";
